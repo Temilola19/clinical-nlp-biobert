@@ -2,7 +2,7 @@
 
 A comparative study fine-tuning BioBERT on real clinical transcription notes to classify medical specialties from unstructured text. The core question this project answers is simple: does domain-specific pretraining actually matter for clinical text, and by how much?
 
-The short answer is yes, meaningfully — BioBERT outperforms a well-tuned TF-IDF baseline by around 14 percentage points on this task. The longer answer is in the results below.
+The short answer is yes, meaningfully BioBERT outperforms a well-tuned TF-IDF baseline by around 14 percentage points on this task. The longer answer is in the results below.
 
 ---
 
@@ -65,7 +65,7 @@ Training takes around 15–20 minutes on CPU, or 3–5 minutes with a GPU. Googl
 | TF-IDF + Logistic Regression | ~73% | ~0.72 | ~0.91 |
 | BioBERT (fine-tuned) | ~87% | ~0.86 | ~0.96 |
 
-Results vary slightly by run. The improvement comes from BioBERT's pretraining on 18 billion words of biomedical text — it understands that "troponin" and "ST elevation" belong together in a way that word-frequency methods cannot capture.
+Results vary slightly by run. The improvement comes from BioBERT's pretraining on 18 billion words of biomedical text, it understands that "troponin" and "ST elevation" belong together in a way that word-frequency methods cannot capture.
 
 ---
 
