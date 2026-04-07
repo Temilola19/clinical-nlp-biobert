@@ -20,6 +20,7 @@ Cardiovascular / Pulmonary · Neurology · Gastroenterology · Orthopedic · Rad
 ```
 project2_clinical_nlp/
 ├── main.py                    # entry point — run this
+├── raw/                       # Put dataset here
 ├── requirements.txt
 ├── src/
 │   ├── data/
