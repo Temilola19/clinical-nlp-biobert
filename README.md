@@ -63,8 +63,8 @@ Training takes around 15–20 minutes on CPU, or 3–5 minutes with a GPU. Googl
 
 | Model | Accuracy | F1 (weighted) | AUC-ROC |
 |---|---|---|---|
-| TF-IDF + Logistic Regression | ~73% | ~0.72 | ~0.91 |
-| BioBERT (fine-tuned) | ~87% | ~0.86 | ~0.96 |
+| TF-IDF + Logistic Regression | ~58% | ~0.57 | ~0.92 |
+| BioBERT (fine-tuned) | ~67% | ~0.67 | ~0.94 |
 
 Results vary slightly by run. The improvement comes from BioBERT's pretraining on 18 billion words of biomedical text, it understands that "troponin" and "ST elevation" belong together in a way that word-frequency methods cannot capture.
 
@@ -77,6 +77,9 @@ Results vary slightly by run. The improvement comes from BioBERT's pretraining o
 | `biobert_results.png` | Training curves, confusion matrix, baseline vs BioBERT comparison |
 | `predictions_tableau.csv` | Per-note predictions with confidence scores for each class |
 | `saved_model/` | Fine-tuned model weights — load with HuggingFace `from_pretrained()` |
+
+<img width="2385" height="743" alt="biobert_results" src="https://github.com/user-attachments/assets/460944cb-f149-4d26-afd9-5954eeb94231" />
+
 
 ---
 
